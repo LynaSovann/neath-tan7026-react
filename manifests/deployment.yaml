@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: neath-tan7026-react-deployment
+  labels:
+    app: neath-tan7026-react
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: neath-tan7026-react
+  template:
+    metadata:
+      labels:
+        app: neath-tan7026-react
+    spec:
+      containers:
+        - name: neath-tan7026-react-container
+          image: pipejet/neath-tan7026-react:0
+          ports:
+            - containerPort: 3000
