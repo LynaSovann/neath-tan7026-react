@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: neath-tan7026-react-container
-          image: pipejet/neath-tan7026-react:0
+          image: pipejet/neath-tan7026-react:1
           ports:
             - containerPort: 3000
